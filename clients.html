@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="calcular.php" method="POST">
+        <h1>Información del Pedido</h1>
+
+        <label for="producto">Producto</label>
+        <select name="producto" id="producto">
+            <option value="Hamburguesas">Hamburguesas</option>
+            <option value="Perro Caliente">Perro Caliente</option>
+            <option value="Gaseosas">Gaseosas</option>
+            <option value="Salsas">Salsas</option>
+        </select>
+
+        <label for="valorPedido">Valor Pedido</label>
+        <input type="number" name="valorPedido" id="valorPedido">
+
+        <label for="cantidad">Cantidad</label>
+        <input type="number" name="cantidad" id="cantidad">
+
+        <button>Enviar Información</button>
+    </form>
+</body>

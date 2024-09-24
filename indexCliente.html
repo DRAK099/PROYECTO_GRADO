@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="formClientes" onsubmit="return infoClientes(event)" method="post" target="_self" >
+        <h1>Información del Pedido</h1>
+        <label for="codPedido">Código Cliente</label>
+        <input type="num" name="codPedido" id="codPedido">
+
+        <label for="nomCliente">Nombre del cliente</label>
+        <input type="text" name="nomCliente" id="nomCliente">
+
+        <label for="dirEnvio">Dirección del envío</label>
+        <input type="text" name="dirEnvio" id="dirEnvio">
+
+        <label for="valorPedido">Valor Pedido</label>
+        <input type="number" name="valorPedido" id="valorPedido">
+
+        <label for="datePedido">Fecha del pedido</label>
+        <input type="datetime" name="datePedido" id="datePedido">
+
+        <button type="submit">Enviar Datos</button>
+    </form>
+    <br/>
+    <br/>
+    <form>
+        <label for="datePedidoo">Fecha del pedido</label>
+        <output id="datePedidoo" name="datePedido" >0</output>
+
+        <label for="nomClientee">Nombre del cliente</label>
+        <output id="nomClientee" name="nomCliente">0</output>
+
+        <label for="dirEnvioo">Dirección de envio</label>
+        <output id="dirEnvioo" name="dirEnvio">0</output>
+    </form>
+    <br/>
+    <br/>
+    <form action="" id="formProductos" onsubmit="return infoProductos(event)" method="get" target="_self">
+        <label for="refProducto">Referencia del producto</label>
+        <input type="text" name="refProducto" id="refProducto">
+
+        <label for="nomProducto">Nombre del producto</label>
+        <input type="text" name="nomProducto" id="nomProducto">
+
+        <label for="cantidad">Cantidad</label>
+        <input type="text" name="cantidad" id="cantidad">
+
+        <label for="bodega">Bodega del despacho</label>
+        <input type="text" name="bodega" id="bodega">
+        <button type="submit">Enviar Datos </button>
+    </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <form action="" id="procesoInt" onsubmit="return infoInterna(event)" method="get" target="_self">
+        <label for="estado1">Estado 1</label>
+        <input type="date" name="estado1" id="estado1">
+
+        <label for="estado2">Estado 2</label>
+        <input type="date" name="estado2" id="estado2">
+
+        <label for="estado3">Estado 3</label>
+        <input type="date" name="estado3" id="estado3">
+
+        <label for="estado4">Estado 5</label>
+        <input type="date" name="estado4" id="estado4">
+
+        <label for="estado5">Estado 6</label>
+        <input type="date" name="estado5" id="estado5">
+
+        <label for="revFinal">Revisión final</label>
+        <input type="date" name="revFinal" id="revFinal">
+        <button type="submit">Enviar Datos </button>
+    </form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <form action="" id="logistica" onsubmit="return infoLogistica(event)" method="get" target="_self">
+        <label for="numPedido">Número del pedido</label>
+        <input type="number" name="numPedido" id="numPedido">
+
+        <label for="fact">Facturación</label>
+        <input type="text" name="fact" id="numFact">
+
+        <label for="trans">Transportadora</label>
+        <input type="text" name="trans" id="trans">
+
+        <label for="guiaDespacho">Guía del despacho</label>
+        <input type="text" name="guiaDespacho" id="guiaDespacho">
+
+        <label for="dateDespacho">Fecha despacho</label>
+        <input type="date" name="dateDespacho" id="dateDespacho">
+
+        <label for="dateRecibido">Fecha recibido</label>
+        <input type="date" name="dateRecibido" id="dateRecibido">
+
+        <button type="submit">Enviar Datos </button>
+    </form>
+
+    <script src="./js/clintesInfo.js"> </script>
+</body>
+
+</html>
