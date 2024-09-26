@@ -88,7 +88,31 @@
         </div>
     
     </div>
+    <script>
+        function tackTimeFunction(event) {
+            event.preventDefault();
+            const form = document.getElementById('formTackTime');
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+    
+            fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
     <script src="./js/tackTime.js"> </script>
+    
 </body>
 
 </html>
